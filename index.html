@@ -62,7 +62,11 @@
         </div>
     </div>
     <script>
-        const menuToggle=document.querySelector('')
+        const menuToggle=document.querySelector('.menuToggle');
+        menuToggle.onclick = function()
+        {
+            menuToggle.classList.toggle('active')
+        }
     </script>
 </body>
 </html>
