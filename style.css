@@ -17,14 +17,38 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
+.menuToggle{
+    position: absolute;
+    bottom: 30px;
+    height: 70px;
+    width: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menuToggle i{
+    font-size: 50px;
+    color: #0f0f20;
+}
 .container{
     height: 550px;
     width: 390px;
     border:3px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     background: #fff;
+    overflow: hidden;
     position: relative;
+    /* display: none; */
+
 }
+
+
+
 .container .top-part{
     height: 100px;
     background: #0f0f20;
@@ -32,6 +56,8 @@ body{
     justify-content: space-around;
     align-items: center;
     border-radius: 20px 20px 0 0;
+}
+.menuToggle.active ~ .container{
 
 }
 .top-part .agent-details{
@@ -77,7 +103,7 @@ body{
 .left-part p{
     color: #555;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     background: rgba(0,0,0,.1);
     border-radius: 10px;
     padding: 10px;
@@ -88,13 +114,15 @@ body{
     text-align: right;
     max-width: 260px 0;
     float: right;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 .chart-section .right-part p {
     color: #fff;
     background: #0f0f20;
     padding: 8px 24px;
     border-radius: 10px;
-    font-size: 15px;
+    
 }
 .chart-section .right-part span {
     color: #555;
@@ -103,26 +131,27 @@ body{
 }
 .bottom-section{
     position: absolute;
-    bottom: 0;
-    height: 45px;
+    bottom: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     border-top:2px solid  rgba(0,0,0,.1);
     /* background:#ffffff; */
-    padding: 10px;
+
 }
 .bottom-section i{
     color: #0f0f20;
     font-size: 30px;
 }
 .bottom-section textarea{
-    height: 45px;
+    height: 40px;
     width: 80%;
     color: #0f0f20;
     padding: 0 5px;
     resize: none;
     outline: none;
     border: none;
+    text-transform: capitalize;
+    overflow-y: hidden;
 }
