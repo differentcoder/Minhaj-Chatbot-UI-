@@ -13,14 +13,15 @@ body{
 }
 .main-div{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     min-height: 100vh;
 }
 
 .menuToggle{
     position: absolute;
-    bottom: 30px;
+    right: 15px;
+    bottom: 15px;
     height: 70px;
     width: 70px;
     background: #fff;
@@ -56,7 +57,8 @@ body{
     background: #fff;
     overflow: hidden;
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
+    right: 20px;
     /* transform: translateY(-100px); */
     /* position: relative; */
     /* display: none; */
@@ -84,7 +86,7 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 50%;
     transition: .5s;
-    box-shadow: 0 15px 25px rgba(0,0,0,.1);
+    /* box-shadow: 0 15px 25px rgba(0,0,0,.1); */
 }
 .menuToggle.active ~ .container::before{
     transition-delay:.5s ;
@@ -111,6 +113,9 @@ body{
 .top-part .agent-text{
     margin-left: 10px;
 }
+.top-part i{
+    cursor: pointer;
+}
 .agent-text h3 {
     font-size: 15px;
 }
@@ -120,13 +125,30 @@ body{
 .agent-text span {
     color: #0f0;
 }
+
 .chart-section{
     position: relative;
     padding: 0 20px;
+    height: 390px;
+    overflow-y: scroll;
+
 }
-.left-part{
-    margin: 60px 0;
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 3px rgba(20, 20, 20, 0.3);
+  }
+  
+  .left-part {
+    margin: 58px 0;
     max-width: 260px;
+    display: table;
 }
 .agent-chart{
     display: flex;
@@ -150,10 +172,11 @@ body{
 .chart-section .right-part{
     margin: -50px 0;
     text-align: right;
-    max-width: 260px 0;
+    max-width: 260px;
     float: right;
     margin-bottom: 10px;
     font-size: 14px;
+    
 }
 .chart-section .right-part p {
     color: #fff;
@@ -169,24 +192,25 @@ body{
 }
 .bottom-section{
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    border-top:2px solid  rgba(0,0,0,.1);
+    border-top:1px solid  rgba(0,0,0,.1);
     /* background:#ffffff; */
 
 }
 .bottom-section i{
     color: #0f0f20;
     font-size: 30px;
+    cursor: pointer;
 }
 .bottom-section textarea{
     height: 40px;
     width: 80%;
     color: #0f0f20;
-    padding: 0 5px;
+    padding: 5px 5px 0 5px;
     resize: none;
     outline: none;
     border: none;
