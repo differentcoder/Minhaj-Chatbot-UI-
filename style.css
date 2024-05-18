@@ -28,12 +28,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 2px 0.5px #a3a3a3;
+    box-shadow: 0px 0px 6px 1px rgb(82 82 82 / 10%);
     border-radius: 50%;
     cursor: pointer;
 }
 .menuToggle i{
-    font-size: 50px;
+    font-size: 40px;
     color: #0f0f20;
 }
 .container{
@@ -64,7 +64,6 @@ body{
     /* display: none; */
     /* transition: .5s, .5s height, .5s width; */
     z-index: -1;
-   
     transition: .5s, height .5s ,width .5s;
     transition-timing-function:cubic-bezier(0.075,.82,.165,1) ;
 }
@@ -218,4 +217,59 @@ body{
     border: none;
     text-transform: capitalize;
     overflow-y: hidden;
+}
+
+/* Responsive CSS */
+
+/* XL Device :1560px. */
+@media screen and (min-width: 1499px) {
+  
+}
+
+
+/* Medium Layout: 1200px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+ 
+}
+
+
+/* Tablet & Mobile Layout: 768px. */
+
+@media only screen and (max-width: 991px) {
+  
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .menuToggle {
+        right: 10px;
+        bottom: 10px;
+    }
+    .container {
+        bottom: 10px;
+        right: 10px;
+    }
+    .menuToggle.active ~ .container {
+        height: 400px;
+        width: 300px;
+    }
+    .chart-section {
+        height: 292px;
+    }
+    .chart-section .right-part {
+        max-width: 215px;
+    }
+    .left-part {
+        max-width: 230px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+ 
 }
