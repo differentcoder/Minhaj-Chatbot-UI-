@@ -10,6 +10,7 @@
 }
 body{
     background-color: #ffffff;
+    
 }
 .main-div{
     display: flex;
@@ -75,7 +76,7 @@ body{
 .container::before{
     content: "";
     position: absolute;
-    background: #fff;
+    background: rgb(0 0 0 / 0%);
     height: 100px;
     width: 100px;
     left: 50%;
@@ -217,11 +218,43 @@ body{
 }
 
 /* Entry into Chatbot Forms  */
-
+/* .bottom-section {
+    display: none;
+} */
 .entryform {
-    background: #ddd;
+    background: #c5c5c5;
     padding: 20px;
+    height: 100%;
 }
+.entryform-info label{
+    font-size: 14px;
+    color: #0f0f20;
+}
+.entryform-info input, select {
+    width: 100%;
+    color: #0f0f20;
+    padding: 10px 11px;
+    border: 1px solid #0f0f209e;
+    border-radius: 10px;
+}
+.entryform-info select option{
+    color: #000;
+}
+.entryform-info  input[type="submit"] {
+    background:#3d3d3d;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.entryform-info  input[type="submit"]:hover{
+    background:  #0f0f20;
+    color: #fff;
+}
+
+
+
 /* Responsive CSS */
 
 /* XL Device :1560px. */
@@ -250,6 +283,7 @@ body{
     .menuToggle {
         right: 10px;
         bottom: 10px;
+
     }
     .container {
         bottom: 10px;
@@ -267,6 +301,15 @@ body{
     }
     .left-part {
         max-width: 230px;
+    }
+
+
+    /* .entryform {
+        height: 100%;
+        overflow-y: scroll;
+    } */
+    .entryform-info input, select {
+        padding: 5px 11px;
     }
 }
 
