@@ -188,17 +188,16 @@ body{
     font-size: 11px;
     font-weight: 500;
 }
-.bottom-section{
+.bottom-section {
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    border-top:1px solid  rgba(0,0,0,.1);
-    /* background:#ffffff; */
-    padding: 0 5px;
-
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background: #ffffff;
+    padding: 5px 5px;
 }
 .bottom-section i{
     color: #0f0f20;
@@ -218,13 +217,19 @@ body{
 }
 
 /* Entry into Chatbot Forms  */
-/* .bottom-section {
+
+
+.bottom-section {
+    display: none;
+}
+/* .entryform{
     display: none;
 } */
 .entryform {
     background: #c5c5c5;
     padding: 20px;
     height: 100%;
+    
 }
 .entryform-info label{
     font-size: 14px;
@@ -304,10 +309,10 @@ body{
     }
 
 
-    /* .entryform {
-        height: 100%;
+
+    .entryform {
         overflow-y: scroll;
-    } */
+    }
     .entryform-info input, select {
         padding: 5px 11px;
     }
