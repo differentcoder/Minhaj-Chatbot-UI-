@@ -142,7 +142,38 @@ body{
   ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 3px rgba(20, 20, 20, 0.3);
   }
-  
+  /* New css */
+
+    .chatbubble {
+        display: inline-block;
+        padding: 8px;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 3px 0;
+        border-radius: 10px;
+        clear: both;
+    }
+    .chatbubble.you{
+        float: left;
+        color: #e0e6ed;
+        background-color: #0e1726;
+
+        max-width:280px;
+    }
+    .chatbubble.me{
+        float: right;
+        color: #ffffff;
+        background-color: #4361ee;
+        max-width:280px;
+    }
+
+    .chatbubble.me.you p{
+        color: #fff;
+    }
+
+/* New css */
+
+
   .left-part {
     margin: 58px 0;
     max-width: 260px;
@@ -219,9 +250,10 @@ body{
 /* Entry into Chatbot Forms  */
 
 
-.bottom-section {
+/* .bottom-section {
     display: none;
-}
+} */
+
 /* .entryform{
     display: none;
 } */
