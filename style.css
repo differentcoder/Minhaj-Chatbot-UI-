@@ -152,19 +152,17 @@ body{
         margin: 3px 0;
         border-radius: 10px;
         clear: both;
+        max-width: 270PX;
     }
     .chatbubble.you{
         float: left;
         color: #e0e6ed;
         background-color: #0e1726;
-
-        max-width:280px;
     }
     .chatbubble.me{
         float: right;
         color: #ffffff;
         background-color: #4361ee;
-        max-width:280px;
     }
 
     .chatbubble.me.you p{
