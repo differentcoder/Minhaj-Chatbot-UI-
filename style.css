@@ -38,16 +38,6 @@ body{
     color: #0f0f20;
 }
 .container{
-    /* height: 550px;
-    width: 390px;
-    border:3px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    background: #fff;
-    overflow: hidden;
-    position: relative; */
-    /* display: none; */
-}
-.container{
     height: 30px;
     width: 30px;
     border:3px solid rgba(255, 255, 255, .5);
@@ -57,10 +47,6 @@ body{
     position: absolute;
     bottom: 20px;
     right: 20px;
-    /* transform: translateY(-100px); */
-    /* position: relative; */
-    /* display: none; */
-    /* transition: .5s, .5s height, .5s width; */
     z-index: -1;
     transition: .5s, height .5s ,width .5s;
     transition-timing-function:cubic-bezier(0.075,.82,.165,1) ;
@@ -84,7 +70,6 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 50%;
     transition: .5s;
-    /* box-shadow: 0 15px 25px rgba(0,0,0,.1); */
 }
 .menuToggle.active ~ .container::before{
     transition-delay:.5s ;
@@ -142,81 +127,59 @@ body{
   ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 3px rgba(20, 20, 20, 0.3);
   }
-  /* New css */
 
-    .chatbubble {
-        display: inline-block;
-        padding: 8px;
-        font-size: 15px;
-        line-height: 25px;
-        margin: 3px 0;
-        border-radius: 10px;
-        clear: both;
-        max-width: 270PX;
-    }
-    .chatbubble.you{
-        float: left;
-        color: #e0e6ed;
-        background-color: #0e1726;
-    }
-    .chatbubble.me{
-        float: right;
-        color: #ffffff;
-        background-color: #4361ee;
-    }
-
-    .chatbubble.me.you p{
-        color: #fff;
-    }
-
-/* New css */
-
-
-  .left-part {
-    margin: 58px 0;
-    max-width: 260px;
-    display: table;
-}
-.agent-chart{
-    display: flex;
-    align-items: center;
-}
-.left-part img{
-    height: 25px;
-    background:#0f0f20;
-    border-radius: 50%;
-    border: 2px solid #023000;
-}
-.left-part p{
-    color: #555;
-    font-weight: 400;
-    font-size: 14px;
-    background: rgba(0,0,0,.1);
+ /* start chat section   */
+  .chatbubble {
+    display: inline-block;
+    padding: 2px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 5px 0;
     border-radius: 10px;
-    padding: 10px;
-    margin-left: 10px;
+    clear: both;
+    max-width: 270PX;
 }
-.chart-section .right-part{
-    margin: -54px 0;
-    text-align: right;
-    max-width: 260px;
+.chatbubble.you{
+    float: left; 
+}
+.chatbubble.me{
     float: right;
-    margin-bottom: 10px;
+}
+.chatbubble-user p {
     font-size: 14px;
-    
-}
-.chart-section .right-part p {
-    color: #fff;
-    background: #0f0f20;
-    padding: 8px 24px;
-    border-radius: 10px;
-    
-}
-.chart-section .right-part span {
-    color: #555;
-    font-size: 11px;
+    color: #64748b;
     font-weight: 500;
 }
+.chatbubble.you .chatbubble-ms {
+    background-color: #eff4fb;
+    border-radius: 0px 16px 16px;
+}
+.chatbubble.you .chatbubble-ms p  {
+    color:#64748b;
+}
+.chatbubble.me .chatbubble-ms {
+    background-color:#3c50e0;
+    border-radius: 6px 16px 0px;
+
+}
+.chatbubble.me .chatbubble-ms p  {
+    color:#ffffff;
+}
+.chatbubble-ms {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 20px;
+    max-width: 260px;
+}
+.chatbubble-time p{
+    color: #64748b;
+    font-size: 12px;
+    line-height: 18px;
+}
+.chatbubble.me  .chatbubble-time p{
+    text-align: right;
+}
+
 .bottom-section {
     position: absolute;
     bottom: 0px;
@@ -244,6 +207,7 @@ body{
     text-transform: capitalize;
     overflow-y: hidden;
 }
+ /* start chat section   */
 
 /* Entry into Chatbot Forms  */
 
@@ -329,17 +293,8 @@ body{
         width: 300px;
     }
     .chart-section {
-        height: 292px;
+         height: 288px;
     }
-    .chart-section .right-part {
-        max-width: 215px;
-    }
-    .left-part {
-        max-width: 230px;
-    }
-
-
-
     .entryform {
         overflow-y: scroll;
     }
