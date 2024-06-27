@@ -14,18 +14,18 @@ body{
 }
 .main-div{
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
     min-height: 100vh;
 }
 
 .menuToggle{
     position: absolute;
-    right: 15px;
+    left: 15px;
     bottom: 15px;
-    height: 60px;
-    width: 60px;
-    background: #fff;
+    height: 45px;
+    width: 45px;
+    background: #609513;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +34,8 @@ body{
     cursor: pointer;
 }
 .menuToggle i{
-    font-size: 40px;
-    color: #0f0f20;
+    font-size: 30px;
+    color: #ffffff;
 }
 .container{
     height: 30px;
@@ -46,7 +46,7 @@ body{
     overflow: hidden;
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     z-index: -1;
     transition: .5s, height .5s ,width .5s;
     transition-timing-function:cubic-bezier(0.075,.82,.165,1) ;
@@ -76,7 +76,7 @@ body{
 }
 .container .top-part{
     height: 60px;
-    background: #0f0f20;
+    background: #800080;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -114,6 +114,7 @@ body{
     padding: 0 10px;
     height: 337px;
     overflow-y: scroll;
+    background: #ebf4ff;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -146,18 +147,18 @@ body{
 }
 .chatbubble-user p {
     font-size: 14px;
-    color: #64748b;
+    color: #000;
     font-weight: 500;
 }
 .chatbubble.you .chatbubble-ms {
-    background-color: #eff4fb;
+    background-color: #ffffff;
     border-radius: 0px 16px 16px;
 }
 .chatbubble.you .chatbubble-ms p  {
-    color:#64748b;
+    color:#000000;
 }
 .chatbubble.me .chatbubble-ms {
-    background-color:#3c50e0;
+    background-color:#0066FF;
     border-radius: 6px 16px 0px;
 
 }
